@@ -1,28 +1,7 @@
 <?php 
 
 
-$animal = 'Leopardo';
-
-
-if ($animal == 'Leon' || $animal == 'Tigre' || $animal == 'Leopardo') {
-
-    echo 'El animal es un felino';
-
-}
-
-else {
-
-    echo 'El animal NO es un felino';
-
-}
-
-
-echo '<hr>';
-
-
-// && 
-
-$age = 25;
+$age = 21;
 
 
 if ($age >= 18 && $age <= 65) {
