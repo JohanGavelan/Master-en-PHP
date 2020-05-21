@@ -16,32 +16,54 @@
 
 $videogames = [
 
-    'action' => ['Gta', 'COD', 'PUGB'],
+    'Action' => ['Gta', 'COD', 'PUGB'],
 
-    'adventure' => ['Assasins', 'Crash', 'Prince of Persia'],
+    'Adventure' => ['Assasins', 'Crash', 'Prince of Persia'],
 
-    'deports' => ['FIFA', 'PES 2019', 'MOTO GP']
+    'Deports' => ['FIFA', 'PES 2019', 'MOTO GP']
 ];
 
 
 
-echo '<Table>';
+echo '<Table border=1px>';
 
+
+    var_dump($videogames);
+    
+
+    echo '<tr>';
 
     foreach ($videogames as $key => $game) {
 
-        
+        echo "<th>$key</th>";
     }
 
+    echo '</tr>';
 
-    echo '<tr>'; // inicio de la primera fila
+    echo '<tr>';
 
-            echo "<th>$key</th>"; 
-        
+    foreach ($videogames as $key => $game) {
 
-    echo '</tr>'; // fin de la primera fila
+        echo "<td>$game[0]</td>";
+    }
 
+    echo '</tr>';
 
+    echo '<tr>';
+
+    foreach ($videogames as $key => $game) {
+
+        echo "<td>$game[1]</td>";
+    }
+
+    echo '</tr>';
+
+    foreach ($videogames as $key => $game) {
+
+        echo "<td>$game[2]</td>";
+    }
+
+    echo '</tr>';
 
 
 
