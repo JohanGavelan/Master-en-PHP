@@ -23,52 +23,17 @@ $videogames = [
     'Deports' => ['FIFA', 'PES 2019', 'MOTO GP']
 ];
 
+?>
 
 
-echo '<Table border=1px>';
+<h2>Tabla de videojuegos</h2>
 
 
-    var_dump($videogames);
-    
+<table border="1">
 
-    echo '<tr>';
+    <?php require 'includes/heading.php' ?>
+    <?php require 'includes/row-01.php' ?>
+    <?php require 'includes/row-02.php' ?>
+    <?php require 'includes/row-03.php' ?>
 
-    foreach ($videogames as $key => $game) {
-
-        echo "<th>$key</th>";
-    }
-
-    echo '</tr>';
-
-    echo '<tr>';
-
-    foreach ($videogames as $key => $game) {
-
-        echo "<td>$game[0]</td>";
-    }
-
-    echo '</tr>';
-
-    echo '<tr>';
-
-    foreach ($videogames as $key => $game) {
-
-        echo "<td>$game[1]</td>";
-    }
-
-    echo '</tr>';
-
-    foreach ($videogames as $key => $game) {
-
-        echo "<td>$game[2]</td>";
-    }
-
-    echo '</tr>';
-
-
-
-
-
-echo '</Table>';
-
-
+</table>
