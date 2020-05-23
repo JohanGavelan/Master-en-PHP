@@ -20,25 +20,53 @@
 
             }
 
-        }
+            if ($error == 'nombre') {
 
+                echo '<strong style="color: red">Introduce tu nombre correctamente</strong>';
+
+            }
+
+            if ($error == 'edad') {
+
+                echo '<strong style="color: red">Introduce una edad correcta</strong>';
+
+            }
+
+            if ($error == 'apellidos') {
+
+                echo '<strong style="color: red">Introduce tus apellidos correctamente</strong>';
+
+            }
+
+            if ($error == 'email') {
+
+                echo '<strong style="color: red">Ingresa un email válido</strong>';
+
+            }
+
+            if ($error == 'password') {
+
+                echo '<strong style="color: red">Ingresa una contraseña de más de 5 digitos</strong>';
+
+            }
+        }
     ?>
 
     <form action="view-form.php" method="POST">
         <label for="nombre">Nombre: </label><br>
-        <input type="text" name="nombre" required pattern="[A-Za-z ]+"><br>
+        <input type="text" name="nombre" pattern="[a-zA-Z ]+" required><br>
 
         <label for="apellidos">Apellidos: </label><br>
-        <input type="text" name="apellidos" required pattern="[A-Za-z ]+"><br>
+        <input type="text" name="apellidos" pattern="[a-zA-Z ]+" required><br>
 
         <label for="edad">Edad: </label><br>
-        <input type="number" name="edad" required pattern="[0-9]+"><br>
+        <input type="number" name="edad" pattern="[0-9]+" required><br>
 
         <label for="email">Email: </label><br>
         <input type="email" name="email" required><br>
 
         <label for="password">Contraseña: </label><br>
-        <input type="password" name="password" required><br>
+        <input type="password" name="password" minlength="5" required><br>
 
         <input type="Submit" value="Enviar">
     </form>
