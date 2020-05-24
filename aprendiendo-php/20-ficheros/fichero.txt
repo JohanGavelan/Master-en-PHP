@@ -1,0 +1,3 @@
+Hola soy un archivo de texto.
+Insertando una nueva línea.
+Cómo va tu día.Soy un texto añadido desde PHPSoy un texto añadido desde PHP
