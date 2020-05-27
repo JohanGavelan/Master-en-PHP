@@ -1,0 +1,28 @@
+#RENOMBRAR UNA TABLA
+
+ALTER TABLE usuarios RENAME TO users; 
+
+
+# CAMBIAR NOMBRE DE UNA COLUMNA
+
+ALTER TABLE users CHANGE nombres nombre varchar(100) null; 
+
+
+# MODIFICAR COLUMNA SIN CAMBIAR NOMBRE
+
+ALTER TABLE users MODIFY apellido char(50) not null;
+
+
+# AÑADIR UNA NUEVA COLUMNA A UNA TABLA 
+
+ALTER TABLE users ADD website varchar(100) null;
+
+
+# AÑADIR RESTRICCIÓN A COLUMNA
+
+ALTER TABLE users ADD CONSTRAINT uq_email UNIQUE(email);  /* PARA QUE NO SE REPITA EL EMAIL */
+
+
+# BORRAR UNA COLUMNA
+
+ALTER TABLE users DROP website;

@@ -1,0 +1,9 @@
+CREATE TABLE usuarios (
+
+id INT (11) AUTO_INCREMENT NOT NULL,
+nombres VARCHAR (100) NOT NULL ,
+apellidos VARCHAR (255) DEFAULT 'Campo sin rellenar',
+email VARCHAR (100) NOT NULL ,
+password VARCHAR (255), 
+CONSTRAINT PK_USUARIOS PRIMARY KEY (id) 
+);
