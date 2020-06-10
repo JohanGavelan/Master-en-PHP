@@ -29,7 +29,7 @@
                 <a href="index.php">Categoria 4</a>
             </li>
             <li>
-                <a href="index.php">Sobre mi</a>
+                <a href="index.php">Sobre mí</a>
             </li>
             <li>
                 <a href="index.php">Contacto</a>
