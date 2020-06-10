@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto PHP - Blog</title>
-    
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header id="cabecera">
@@ -36,6 +36,7 @@
             </li>
         </ul>
     </nav>
+    <div class="clearfix"></div>
     </header>
 
     <div id="contenedor">
@@ -92,5 +93,8 @@
             </article>
         </div>
     </div>
+    <footer id="pie">
+        <p>Copyright &copy; 2020</p>
+    </footer>
 </body>
 </html>     
