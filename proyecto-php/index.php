@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto PHP - Blog</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <header id="cabecera">
         <div id="logo">
             <a href="index.php">Blog de videojuegos</a>
         </div>
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="index.php">Inicio</a>
-            </li>
-            <li>
-                <a href="index.php">Categoria 1</a>
-            </li>
-            <li>
-                <a href="index.php">Categoria 2</a>
-            </li>
-            <li>
-                <a href="index.php">Categoria 3</a>
-            </li>
-            <li>
-                <a href="index.php">Categoria 4</a>
-            </li>
-            <li>
-                <a href="index.php">Sobre mí</a>
-            </li>
-            <li>
-                <a href="index.php">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="clearfix"></div>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.php">Inicio</a>
+                </li>
+                <li>
+                    <a href="index.php">Categoria 1</a>
+                </li>
+                <li>
+                    <a href="index.php">Categoria 2</a>
+                </li>
+                <li>
+                    <a href="index.php">Categoria 3</a>
+                </li>
+                <li>
+                    <a href="index.php">Categoria 4</a>
+                </li>
+                <li>
+                    <a href="index.php">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="index.php">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
     </header>
 
     <div id="contenedor">
@@ -76,25 +78,38 @@
         <div id="principal">
             <h1>Últimas entradas</h1>
             <article class="entrada">
-                <h2>Título de mi entrada</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                </a>
             </article>
             <article class="entrada">
-                <h2>Título de mi entrada</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                </a>
             </article>
             <article class="entrada">
-                <h2>Título de mi entrada</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                </a>
             </article>
             <article class="entrada">
-                <h2>Título de mi entrada</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita excepturi quae neque quas eaque maiores perferendis aut quam omnis, doloremque porro odit assumenda dicta, consequuntur provident repellat, non earum deserunt.</p>
+                </a>
             </article>
+            <div id="btn">
+                <a href="">Ver todas las entradas</a>
+            </div>
         </div>
+        <div class="clearfix"></div>
     </div>
-    <footer id="pie">
+    <footer id="footer">
         <p>Copyright &copy; 2020</p>
     </footer>
 </body>
-</html>     
+
+</html>
