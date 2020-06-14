@@ -7,6 +7,13 @@ require_once 'includes/conexion.php';
 //RECOGER DATOS DEL FORMULARIO
 
 if (isset($_POST)) {
+
+    //Borrar error antiguo
+    if(isset($_SESSION['error_login'])) {
+        session_unset();
+    }
+
+    //Recoger datos del formulario
     $email = trim($_POST['email']);
     $password = $_POST['password'];
 
