@@ -29,3 +29,19 @@ function borrarErrores() {
 
     return $borrado;
 }
+
+
+function conseguirCategorias($conexion) {
+
+    $sql = "SELECT * FROM categorias;";
+    $categorias = mysqli_query($conexion, $sql);
+
+    $result = []; 
+
+    if ($categorias && mysqli_num_rows($categorias) >= 1) {
+        $result = $categorias;
+    }
+
+    return $result;
+
+} 
