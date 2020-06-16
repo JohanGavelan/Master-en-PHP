@@ -48,17 +48,21 @@ function conseguirCategorias($conexion) {
 
 function conseguirUltimasEntradas($conexion) {
 
-    $sql = "SELECT e.*, c.* FROM entradas e" . "INNER JOIN categorias c ON e.categoria_id = c.id" . "ORDER BY e.id DESC LIMIT 4";
-
+    $sql = "SELECT e.*, c.* FROM entradas e INNER JOIN categorias c ON e.categoria_id = c.id ORDER BY e.id DESC LIMIT 4";
     $entradas = mysqli_query($conexion, $sql);
 
-    $result = array();
+    $result = [];
 
     if ($entradas && mysqli_num_rows($entradas) >= 1) {
-
         $result = $entradas;
-
     }
 
-    return $entradas;
+    return $result;
+}
+
+
+function vd($var) {
+
+    die(var_dump($var));
+    
 }

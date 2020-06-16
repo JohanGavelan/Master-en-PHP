@@ -8,20 +8,19 @@
     if (!empty($entradas)) :
         while ($entrada = mysqli_fetch_assoc($entradas)) :
     ?>
-        <article class="entrada">
-        <a href="#">
-            <h2><?= $entrada['titulo']?></h2>
-            <p>
-                <?= $entrada['descripcion']?>
-            </p>
-        </a>
-        
-    </article>
+            <article class="entrada">
+                <a href="#">
+                    <h2><?= $entrada['titulo'] ?></h2>
+                    <p>
+                        <?= substr($entrada['descripcion'], 0, 200) . '...' ?>
+                    </p>
+                </a>
+            </article>
     <?php
         endwhile;
     endif;
     ?>
-    
+
     <div id="btn">
         <a href="">Ver todas las entradas</a>
     </div>
