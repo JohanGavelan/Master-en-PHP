@@ -35,6 +35,13 @@ body {
     background-color: red;
 }
 
+.fecha {
+    display: inline-block;
+    color: #444;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
 
 /*CABECERA*/
 
