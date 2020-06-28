@@ -17,11 +17,11 @@ if(isset($_POST)) {
         $errores['titulo'] = 'Inserte el título';
     }
 
-    elseif(empty($descripcion)) {
-        $errores['descripcion'] = 'La descripción no es válida';
+    if(empty($descripcion)) {
+        $errores['descripcion'] = 'Inserte una descripción';
     }
 
-    elseif(empty($categoria) && !is_numeric($categoria)) {
+    if(empty($categoria) && !is_numeric($categoria)) {
         $errores['categoria'] = 'La categoría no es válida';
     }
 
@@ -30,12 +30,12 @@ if(isset($_POST)) {
         $sql = "INSERT INTO entradas VALUES(NULL, $usuario, $categoria, '$titulo', '$descripcion', CURDATE());";
 
         $guardar = mysqli_query($db, $sql); 
+        header("Location: index.php"); 
     }
 
     else {
         $_SESSION['errores_entrada'] = $errores;
+        header("Location: crear-entradas.php"); 
     }
 
 }
-
-header("Location: index.php"); 
